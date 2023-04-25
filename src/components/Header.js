@@ -4,8 +4,8 @@ import '../styles.css';
 
 export default function Header() {
   return (
-    <header className="bg-gray-800 text-white">
-      <NavigationMenu.Root className="flex justify-between items-center px-4 py-2">
+    <header className="bg-gray-800 text-white p-5">
+      <NavigationMenu.Root className="flex justify-around items-center px-4 py-2">
         <NavigationMenu.List className="flex space-x-10">
           <NavigationMenu.Item>
             <NavigationMenu.Link
