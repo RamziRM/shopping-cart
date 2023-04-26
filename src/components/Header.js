@@ -1,6 +1,7 @@
 import React from 'react';
 import * as NavigationMenu from '@radix-ui/react-navigation-menu';
 import '../styles.css';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   return (
@@ -8,28 +9,28 @@ export default function Header() {
       <NavigationMenu.Root className="flex justify-around items-center px-4 py-2">
         <NavigationMenu.List className="flex space-x-10">
           <NavigationMenu.Item>
-            <NavigationMenu.Link
-              href="/"
+            <Link
+              to="/"
               className="font-bold text-4xl border-b-4 border-transparent hover:border-gray-400"
             >
               <button className="focus:outline-none">Home</button>
-            </NavigationMenu.Link>
+            </Link>
           </NavigationMenu.Item>
           <NavigationMenu.Item>
-            <NavigationMenu.Link
-              href="/shop"
+            <Link
+              to="/shop"
               className="font-bold text-4xl border-b-4 border-transparent hover:border-gray-400"
             >
               <button className="focus:outline-none">Shop</button>
-            </NavigationMenu.Link>
+            </Link>
           </NavigationMenu.Item>
           <NavigationMenu.Item>
-            <NavigationMenu.Link
-              href="/about"
+            <Link
+              to="/about"
               className="font-bold text-4xl border-b-4 border-transparent hover:border-gray-400"
             >
               <button className="focus:outline-none">About</button>
-            </NavigationMenu.Link>
+            </Link>
           </NavigationMenu.Item>
         </NavigationMenu.List>
         <NavigationMenu.Viewport />
