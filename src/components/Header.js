@@ -3,8 +3,9 @@ import * as NavigationMenu from '@radix-ui/react-navigation-menu';
 import '../styles.css';
 import { Link } from 'react-router-dom';
 import {CgDarkMode} from 'react-icons/cg';
+// DARK MODE
 
-export default function Header() {
+export default function Header({darkMode, setDarkMode}) {
   return (
     <header className="bg-gray-800 text-white p-5">
       <div className="flex justify-between ">
@@ -38,7 +39,7 @@ export default function Header() {
           <NavigationMenu.Viewport />
         </NavigationMenu.Root>
         <div className='flex items-center'>
-          <CgDarkMode className="text-4xl" />
+          <CgDarkMode onClick={() => setDarkMode(!darkMode)} className="text-4xl" />
         </div>
       </div>
     </header>
