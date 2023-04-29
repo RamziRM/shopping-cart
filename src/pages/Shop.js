@@ -47,9 +47,9 @@ const Shop = ({ darkMode }) => {
   ];
 
   return (
-    <div className="h-screen dark:bg-gray-900">
+    <div className="h-screen dark:bg-gray-900 p-7">
       <h1 className="text-4xl dark:text-white">Shop</h1>
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-2 gap-6 sm:grid-cols-3">
         {products.map((product) => (
           <ItemCard
             key={product.id}
