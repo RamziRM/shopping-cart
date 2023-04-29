@@ -1,13 +1,15 @@
-import React from "react";
+import React from 'react';
 
-const ItemCard = ({ item }) => {
-    return (
-        <div className="flex flex-col justify-center items-center w-1/4 p-5 shadow-md">
-            <img src={item.img} alt={item.name} className="w-1/2"/>
-            <h1 className="text-2xl">{item.name}</h1>
-            <h2 className="text-xl">{item.price}</h2>
-        </div>
-    );
-}
+const ItemCard = ({ title, price, imageUrl }) => {
+  return (
+    <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+      <img className="w-full" src={imageUrl} alt={title} />
+      <div className="p-4">
+        <h2 className="font-bold text-xl mb-2">{title}</h2>
+        <p className="text-gray-700 text-base">${price}</p>
+      </div>
+    </div>
+  );
+};
 
 export default ItemCard;
