@@ -9,18 +9,41 @@ const Shop = ({ darkMode }) => {
   // An array of 12 mock products
   const products = [
     {
-      id: 1,
-      title: 'Product 1',
-      price: 10.99,
-      imageUrl: 'https://picsum.photos/204',
+        id: 1,
+        title: 'Product 1',
+        price: 10.99,
+        imageUrl: 'https://picsum.photos/204',
     },
     {
-      id: 2,
-      title: 'Product 2',
-      price: 20.99,
-      imageUrl: 'https://picsum.photos/202',
+        id: 2,
+        title: 'Product 2',
+        price: 20.99,
+        imageUrl: 'https://picsum.photos/202',
     },
-    // Add more products here
+    {
+        id: 3,
+        title: 'Product 3',
+        price: 20.99,
+        imageUrl: 'https://picsum.photos/207',
+    },
+    {
+        id: 4,
+        title: 'Product 4',
+        price: 10.99,
+        imageUrl: 'https://picsum.photos/211',
+    },
+    {
+        id: 5,
+        title: 'Product 5',
+        price: 20.99,
+        imageUrl: 'https://picsum.photos/209',
+    },
+    {
+        id: 6,
+        title: 'Product 6',
+        price: 20.99,
+        imageUrl: 'https://picsum.photos/222',
+    },
   ];
 
   return (
