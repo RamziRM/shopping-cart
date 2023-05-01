@@ -6,7 +6,7 @@ import { CgDarkMode } from "react-icons/cg";
 import { HiOutlineShoppingCart } from "react-icons/hi";
 // DARK MODE
 
-export default function Header({ darkMode, setDarkMode }) {
+export default function Header({ darkMode, setDarkMode, toggleCart }) {
   return (
     <header className="bg-gray-800 text-white p-5">
       <div className="flex justify-between ">
@@ -40,8 +40,8 @@ export default function Header({ darkMode, setDarkMode }) {
           <NavigationMenu.Viewport />
         </NavigationMenu.Root>
         <div className="flex items-center">
-          <div className="flex items-center">
-            <button className="bg-blue-700 p rounded-full px-2">1</button>
+          <div className="flex items-center" onClick={toggleCart}>
+            <button className="bg-blue-700 p rounded-full px-2">+</button>
             <HiOutlineShoppingCart className="text-2xl mr-5" />
           </div>
           <CgDarkMode
