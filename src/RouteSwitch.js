@@ -7,10 +7,19 @@ import About from "./pages/About";
 
 const RouteSwitch = () => {
   const [darkMode, setDarkMode] = useState(false);
+  const [cartOpen, setCartOpen] = useState(false);
+
+  const toggleCart = () => {
+    setCartOpen(!cartOpen);
+  };
 
   return (
     <BrowserRouter>
-      <Header darkMode={darkMode} setDarkMode={setDarkMode} />
+      <Header
+        darkMode={darkMode}
+        setDarkMode={setDarkMode}
+        toggleCart={toggleCart}
+      />
       <Routes>
         <Route
           exact
@@ -19,7 +28,14 @@ const RouteSwitch = () => {
         />
         <Route
           path="/shop"
-          element={<Shop darkMode={darkMode} setDarkMode={setDarkMode} />}
+          element={
+            <Shop
+              darkMode={darkMode}
+              setDarkMode={setDarkMode}
+              cartOpen={cartOpen}
+              toggleCart={toggleCart}
+            />
+          }
         />
         <Route
           path="/about"
