@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 
-const AddCartBtn = () => {
+const AddCartBtn = ({ handleAddToCart, product }) => {
   const [quantity, setQuantity] = useState(1);
   const [isAddingToCart, setIsAddingToCart] = useState(false);
 
   const handleClick = () => {
     setIsAddingToCart(true);
+    handleAddToCart(product, quantity); // Call the handleAddToCart function with the selected quantity
   };
 
   const handleIncrease = () => {
