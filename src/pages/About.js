@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import FormDemo from "../components/Form";
 
 const About = ({ darkMode }) => {
   useEffect(() => {
@@ -6,8 +7,8 @@ const About = ({ darkMode }) => {
   }, [darkMode]);
 
   return (
-    <div className="h-screen dark:bg-gray-900">
-      <h1 className="text-4xl dark:text-white">About</h1>
+    <div className="h-screen dark:bg-gray-900 mx-auto flex justify-center">
+      <FormDemo />
     </div>
   );
 };
