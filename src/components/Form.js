@@ -2,7 +2,14 @@ import React from "react";
 import * as Form from "@radix-ui/react-form";
 
 const FormDemo = () => (
-  <Form.Root className="w-[260px]">
+  <Form.Root
+    className="w-[260px]"
+    onSubmit={(event) => {
+      event.preventDefault();
+      const data = Object.fromEntries(new FormData(event.currentTarget));
+      console.log(data);
+    }}
+  >
     <Form.Field className="grid mb-[10px]" name="email">
       <div className="flex items-baseline justify-between">
         <Form.Label className="text-black text-[15px] font-medium leading-[35px] dark:text-white">
