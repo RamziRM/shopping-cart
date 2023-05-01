@@ -3,6 +3,7 @@ import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import "../styles.css";
 import { Link } from "react-router-dom";
 import { CgDarkMode } from "react-icons/cg";
+import { HiOutlineShoppingCart } from "react-icons/hi";
 // DARK MODE
 
 export default function Header({ darkMode, setDarkMode }) {
@@ -39,6 +40,10 @@ export default function Header({ darkMode, setDarkMode }) {
           <NavigationMenu.Viewport />
         </NavigationMenu.Root>
         <div className="flex items-center">
+          <div className="flex items-center">
+            <button className="bg-blue-700 p rounded-full px-2">1</button>
+            <HiOutlineShoppingCart className="text-2xl mr-5" />
+          </div>
           <CgDarkMode
             onClick={() => setDarkMode(!darkMode)}
             className="text-2xl"
