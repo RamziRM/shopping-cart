@@ -14,7 +14,7 @@ export default function Header({ darkMode, setDarkMode }) {
             <NavigationMenu.Item>
               <Link
                 to="/"
-                className="font-bold text-4xl border-b-4 border-transparent hover:border-gray-400"
+                className="font-bold text-2xl border-b-4 border-transparent hover:border-gray-400"
               >
                 <button className="focus:outline-none">Home</button>
               </Link>
@@ -22,7 +22,7 @@ export default function Header({ darkMode, setDarkMode }) {
             <NavigationMenu.Item>
               <Link
                 to="/shop"
-                className="font-bold text-4xl border-b-4 border-transparent hover:border-gray-400"
+                className="font-bold text-2xl border-b-4 border-transparent hover:border-gray-400"
               >
                 <button className="focus:outline-none">Shop</button>
               </Link>
@@ -30,7 +30,7 @@ export default function Header({ darkMode, setDarkMode }) {
             <NavigationMenu.Item>
               <Link
                 to="/about"
-                className="font-bold text-4xl border-b-4 border-transparent hover:border-gray-400"
+                className="font-bold text-2xl border-b-4 border-transparent hover:border-gray-400"
               >
                 <button className="focus:outline-none">About</button>
               </Link>
@@ -41,7 +41,7 @@ export default function Header({ darkMode, setDarkMode }) {
         <div className="flex items-center">
           <CgDarkMode
             onClick={() => setDarkMode(!darkMode)}
-            className="text-4xl"
+            className="text-2xl"
           />
         </div>
       </div>
